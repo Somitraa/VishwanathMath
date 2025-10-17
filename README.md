@@ -1,40 +1,70 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌸 VishwanathMath
 
-## Getting Started
+A web-based platform dedicated to spiritual growth, divine wisdom, and community service.
+VishwanathMath serves as a digital sanctuary for devotees to explore temple information, upcoming events, and the mission of spiritual enlightenment.
 
-First, run the development server:
+<!-- optional banner image -->
 
-```bash
+🚀 Tech Stack
+
+Next.js 14 (App Router)
+
+React 18
+
+Tailwind CSS
+
+TypeScript (optional)
+
+Vercel Deployment
+
+GitHub for Version Control
+
+📂 Folder Structure
+my-app/
+├── app/                # App router pages and layouts
+├── components/         # Reusable UI components
+├── public/             # Static assets (images, favicon, etc.)
+├── styles/             # Global styles
+├── package.json        # Project dependencies
+└── README.md           # Documentation
+
+⚙️ Installation & Setup
+1️⃣ Clone this repository
+git clone https://github.com/Somitraa/VishwanathMath.git
+
+2️⃣ Move into the project folder
+cd VishwanathMath
+
+3️⃣ Install dependencies
+npm install
+
+4️⃣ Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Then open your browser at http://localhost:3000
+ 🚀
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ 🤝 Contributing
 
-## Learn More
+Contributions, suggestions, and improvements are welcome!
+To contribute:
 
-To learn more about Next.js, take a look at the following resources:
+Fork this repository
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create a new branch (feature/your-feature-name)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Commit your changes
 
-## Deploy on Vercel
+Submit a pull request 🚀
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📜 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# VishwanathMath
->>>>>>> fcaff1b07c6019acf7ec6bd4e86a75ff007ec08e
+This project is licensed under the MIT License — feel free to use and modify it.
+
+✨ Author
+
+Somitra Gupta
+📍 Created with 💖 and devotion for the VishwanathMath community.
+
+##FIRST_COMMIT##
