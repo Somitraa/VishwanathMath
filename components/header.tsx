@@ -11,24 +11,24 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-            <span ><img src="/logo.jpg" alt="" /></span>
+            <span><img src="/logo.jpg" alt="लोगो" /></span>
           </div>
-          <h1 className="text-2xl font-bold text-primary">VishwanathMath</h1>
+          <h1 className="text-2xl font-bold text-primary">विश्वनाथ मठ</h1>
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8">
           <a href="#about" className="text-foreground hover:text-primary transition">
-            About
+            हमारे बारे में
           </a>
           <a href="#services" className="text-foreground hover:text-primary transition">
-            Services
+            सेवाएँ
           </a>
           <a href="#events" className="text-foreground hover:text-primary transition">
-            Events
+            कार्यक्रम
           </a>
           <a href="#contact" className="text-foreground hover:text-primary transition">
-            Contact
+            संपर्क करें
           </a>
         </div>
 
@@ -42,16 +42,16 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden bg-secondary/50 px-4 py-4 space-y-3">
           <a href="#about" className="block text-foreground hover:text-primary">
-            About
+            हमारे बारे में
           </a>
           <a href="#services" className="block text-foreground hover:text-primary">
-            Services
+            सेवाएँ
           </a>
           <a href="#events" className="block text-foreground hover:text-primary">
-            Events
+            कार्यक्रम
           </a>
           <a href="#contact" className="block text-foreground hover:text-primary">
-            Contact
+            संपर्क करें
           </a>
         </div>
       )}

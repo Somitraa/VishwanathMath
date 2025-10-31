@@ -5,7 +5,7 @@ import Services from "@/components/services"
 import Events from "@/components/events"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
-
+import Guruji from "@/components/guruji"
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -13,6 +13,8 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Guruji />
+
       <Events />
       <Contact />
       <Footer />
