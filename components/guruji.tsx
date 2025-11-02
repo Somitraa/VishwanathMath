@@ -1,3 +1,5 @@
+import { Instagram, Facebook, MessageCircle } from "lucide-react"
+
 export default function Guruji() {
   return (
     <section id="guruji" className="py-20 md:py-32 bg-secondary/30">
@@ -55,30 +57,34 @@ export default function Guruji() {
             </div>
 
             <div className="flex space-x-6 pt-4">
-              <a
-                href="https://www.instagram.com/tantrachary_jai_visvhnath_/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:text-primary/80 text-xl font-medium"
-              >
-                इंस्टाग्राम
-              </a>
-              <a
-                href="https://www.facebook.com/tantracarya.jaya.visvanatha"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:text-primary/80 text-xl font-medium"
-              >
-                फेसबुक
-              </a>
-                            <a
-                href="https://wa.me/+918319423896"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:text-primary/80 text-xl font-medium"
-              >
-                व्हाट्सएप
-              </a>
+
+<a
+  href="https://www.instagram.com/tantrachary_jai_visvhnath_/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-primary hover:text-primary/80 text-xl font-medium flex items-center gap-2"
+>
+  <Instagram className="w-5 h-5" /> इंस्टाग्राम
+</a>
+
+<a
+  href="https://www.facebook.com/tantracarya.jaya.visvanatha"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-primary hover:text-primary/80 text-xl font-medium flex items-center gap-2"
+>
+  <Facebook className="w-5 h-5" /> फेसबुक
+</a>
+
+<a
+  href="https://wa.me/+918319423896"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-primary hover:text-primary/80 text-xl font-medium flex items-center gap-2"
+>
+  <MessageCircle className="w-5 h-5" /> व्हाट्सएप
+</a>
+
             </div>
           </div>
         </div>

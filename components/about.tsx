@@ -6,9 +6,15 @@ export default function About() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 text-balance">
             विश्वनाथ मठ के बारे में
           </h2>
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            आध्यात्मिक परंपराओं को संरक्षित करने और सामुदायिक सद्भाव को बढ़ावा देने के उद्देश्य से स्थापित
-          </p>
+<p className="text-lg text-foreground/80 leading-relaxed">
+  आध्यात्मिक परंपराओं को संरक्षित करने और सामुदायिक सद्भाव को बढ़ावा देने के उद्देश्य से स्थापित 
+  <span className="font-semibold text-primary"> विश्वनाथ मठ </span> 
+  एक दिव्य स्थल है, जहाँ भक्ति, साधना और सेवा का अद्भुत संगम देखने को मिलता है। 
+  यहाँ पर स्थापित <span className="font-semibold text-primary">1100 शिवलिंग </span> 
+  भगवान शिव की अनंत महिमा और शक्ति के प्रतीक हैं, जो भक्तों को आत्मिक शांति और आध्यात्मिक ऊर्जा का अनुभव कराते हैं। <br /> 
+  यह मठ केवल एक उपासना स्थल नहीं, बल्कि एक ऐसा आध्यात्मिक केंद्र है जो संस्कृति, ज्ञान और मानवता के मार्ग को आलोकित करता है।
+</p>
+
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

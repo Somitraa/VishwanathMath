@@ -6,15 +6,26 @@ import Events from "@/components/events"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import Guruji from "@/components/guruji"
+import Vatika from "@/components/Vatika"
+import ChiranjiviTemple from "@/components/ChiranjiviTemple"
+import RudraPeeth from "@/components/RudraPeeth"
+import BelVan from "@/components/BelVan"
+import MainTemple from "@/components/main"
+
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Header />
-      <Hero />
+      <Hero />      
+      <MainTemple />
+      <BelVan /> 
+      <ChiranjiviTemple />
+      <RudraPeeth />
+      <Vatika />
+
       <About />
       <Services />
       <Guruji />
-
       <Events />
       <Contact />
       <Footer />

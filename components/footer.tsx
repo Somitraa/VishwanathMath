@@ -68,7 +68,7 @@ export default function Footer() {
       व्हाट्सएप
     </a>
     <a
-      href="https://chat.whatsapp.com/GZZktoHFBOq7RfBTAdyvVC"
+      href="https://chat.whatsapp.com/E25410FsQG7Jci8xAQi3Gw"
       className="hover:text-primary-foreground/80 transition"
     >
       व्हाट्सएप ग्रुप

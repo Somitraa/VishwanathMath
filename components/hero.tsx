@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="text-5xl md:text-6xl font-bold text-primary text-balance">
-              विश्वनाथ मठ में आपका स्वागत है
+              सिद्ध गिरी विश्वनाथ मठ में आपका स्वागत है
             </h2>
             <p className="text-xl text-foreground/80 leading-relaxed">
               एक पवित्र स्थान जो आध्यात्मिक विकास, दिव्य ज्ञान और सामुदायिक सेवा के लिए समर्पित है। 
