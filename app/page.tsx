@@ -11,6 +11,7 @@ import ChiranjiviTemple from "@/components/ChiranjiviTemple"
 import RudraPeeth from "@/components/RudraPeeth"
 import BelVan from "@/components/BelVan"
 import MainTemple from "@/components/main"
+import Gaushala from "@/components/Gaushala"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <BelVan /> 
       <ChiranjiviTemple />
       <RudraPeeth />
+      <Gaushala />
       <Vatika />
 
       <About />
