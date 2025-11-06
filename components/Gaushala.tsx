@@ -8,7 +8,7 @@ export default function Gaushala() {
   return (
     <section
       id="gaushala"
-      className="py-20 md:py-32 bg-gradient-to-br from-secondary/20 to-primary/10"
+      className="py-20 md:py-32 bg-white border-t border-border/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
@@ -16,7 +16,7 @@ export default function Gaushala() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             {lang === "hi" ? "विश्वनाथ मठ गौशाला" : "Vishwanath Math Gaushala"}
           </h2>
-          <p className="text-lg text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
             {lang === "hi" ? (
               <>
                 विश्वनाथ मठ की गौशाला केवल एक सेवा स्थल नहीं, बल्कि{" "}
@@ -47,7 +47,7 @@ export default function Gaushala() {
             <img
               src="/c17.jpg"
               alt={lang === "hi" ? "विश्वनाथ मठ गौशाला" : "Vishwanath Math Gaushala"}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />
           </div>
 
@@ -119,6 +119,15 @@ export default function Gaushala() {
               </>
             )}
           </div>
+        </div>
+
+        {/* Closing Highlight */}
+        <div className="mt-16 text-center p-8 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 shadow-sm">
+          <p className="text-lg text-foreground/80 leading-relaxed">
+            {lang === "hi"
+              ? "विश्वनाथ मठ की गौशाला केवल पशु सेवा नहीं, बल्कि ईश्वर सेवा का जीवंत उदाहरण है।"
+              : "The Vishwanath Math Gaushala is not merely animal care, but a living example of divine service."}
+          </p>
         </div>
       </div>
     </section>

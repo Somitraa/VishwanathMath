@@ -7,7 +7,7 @@ export default function Guruji() {
   const { lang } = useLang();
 
   return (
-    <section id="guruji" className="py-20 md:py-32 bg-secondary/30">
+    <section id="guruji" className="py-20 md:py-32 bg-white border-t border-border/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading Section */}
         <div className="text-center mb-16">
@@ -16,7 +16,7 @@ export default function Guruji() {
               ? "शिवऋषि आचार्य मनीष द्विवेदी जी"
               : "ShivRishi Acharya Manish Dwivedi Ji"}
           </h2>
-          <p className="text-lg text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
             {lang === "hi" ? (
               <>
                 तंत्र और वेद परंपरा के प्रख्यात साधक —{" "}
@@ -62,62 +62,24 @@ export default function Guruji() {
 
           {/* Description Cards */}
           <div className="space-y-6">
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl hover:border-primary/20 border-2 border-transparent transition">
-              <p className="text-lg text-foreground/80 leading-relaxed">
-                {lang === "hi" ? (
-                  <>
-                    शिवऋषि आचार्य मनीष द्विवेदी जी ने बाल्यकाल से ही वेद, तंत्र और साधना
-                    के गूढ़ मार्ग में दीक्षा प्राप्त की। वे जीवन को केवल भौतिक उपलब्धियों का
-                    नहीं, बल्कि आध्यात्मिक उन्नति का साधन मानते हैं।
-                  </>
-                ) : (
-                  <>
-                    From an early age, Acharya Manish Dwivedi Ji received
-                    initiation into the deep paths of Veda, Tantra, and spiritual
-                    discipline. He views life not merely as a pursuit of material
-                    success, but as a means of inner spiritual evolution.
-                  </>
-                )}
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl hover:border-primary/20 border-2 border-transparent transition">
-              <p className="text-lg text-foreground/80 leading-relaxed">
-                {lang === "hi" ? (
-                  <>
-                    दशाश्वमेध घाट, वाराणसी से वे अपने उपदेशों और अनुष्ठानों द्वारा जन-जन तक
-                    तांत्रिक साधना का सार पहुँचा रहे हैं। वे बताते हैं कि तंत्र केवल शक्ति की
-                    साधना नहीं, बल्कि जीवन के हर क्षेत्र में संतुलन और जागृति का विज्ञान है।
-                  </>
-                ) : (
-                  <>
-                    From Dashashwamedh Ghat, Varanasi, he shares the essence of
-                    Tantric practices through teachings and rituals. He explains
-                    that Tantra is not merely worship of power, but a science of
-                    balance and awakening in every aspect of life.
-                  </>
-                )}
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl hover:border-primary/20 border-2 border-transparent transition">
-              <p className="text-lg text-foreground/80 leading-relaxed">
-                {lang === "hi" ? (
-                  <>
-                    आचार्य जी का उद्देश्य केवल आध्यात्मिक शिक्षा देना नहीं, बल्कि प्रत्येक
-                    व्यक्ति के भीतर निहित दिव्यता को जागृत करना है। वे आधुनिक समाज को यह
-                    सिखाते हैं कि विज्ञान और अध्यात्म विरोधी नहीं।
-                  </>
-                ) : (
-                  <>
-                    His goal is not just to impart spiritual knowledge, but to
-                    awaken the divinity that lies within every individual. He
-                    teaches modern society that science and spirituality are not
-                    opposites, but complementary paths to truth.
-                  </>
-                )}
-              </p>
-            </div>
+            {[
+              lang === "hi"
+                ? "शिवऋषि आचार्य मनीष द्विवेदी जी ने बाल्यकाल से ही वेद, तंत्र और साधना के गूढ़ मार्ग में दीक्षा प्राप्त की। वे जीवन को केवल भौतिक उपलब्धियों का नहीं, बल्कि आध्यात्मिक उन्नति का साधन मानते हैं।"
+                : "From an early age, Acharya Manish Dwivedi Ji received initiation into the deep paths of Veda, Tantra, and spiritual discipline. He views life not merely as a pursuit of material success, but as a means of inner spiritual evolution.",
+              lang === "hi"
+                ? "दशाश्वमेध घाट, वाराणसी से वे अपने उपदेशों और अनुष्ठानों द्वारा जन-जन तक तांत्रिक साधना का सार पहुँचा रहे हैं। वे बताते हैं कि तंत्र केवल शक्ति की साधना नहीं, बल्कि जीवन के हर क्षेत्र में संतुलन और जागृति का विज्ञान है।"
+                : "From Dashashwamedh Ghat, Varanasi, he shares the essence of Tantric practices through teachings and rituals. He explains that Tantra is not merely worship of power, but a science of balance and awakening in every aspect of life.",
+              lang === "hi"
+                ? "आचार्य जी का उद्देश्य केवल आध्यात्मिक शिक्षा देना नहीं, बल्कि प्रत्येक व्यक्ति के भीतर निहित दिव्यता को जागृत करना है। वे आधुनिक समाज को यह सिखाते हैं कि विज्ञान और अध्यात्म विरोधी नहीं।"
+                : "His goal is not just to impart spiritual knowledge, but to awaken the divinity that lies within every individual. He teaches modern society that science and spirituality are not opposites, but complementary paths to truth.",
+            ].map((text, idx) => (
+              <div
+                key={idx}
+                className="bg-secondary/10 rounded-xl p-6 shadow-sm hover:shadow-md border border-border/10 transition"
+              >
+                <p className="text-lg text-foreground/80 leading-relaxed">{text}</p>
+              </div>
+            ))}
 
             {/* Social Links */}
             <div className="flex flex-wrap gap-6 pt-4">

@@ -4,13 +4,11 @@ import { useLang } from "@/context/LanguageProvider";
 export default function ChiranjiviTemple() {
   const { lang } = useLang();
 
-  // ✅ Chiranjivi data: Hindi + English versions
   const chiranjivis =
     lang === "hi"
       ? [
           { name: "अश्वत्थामा (Ashwatthama)", description: "महाभारत के योद्धा जिन्हें भगवान श्रीकृष्ण ने अमरत्व का वरदान दिया।" },
           { name: "बलि राजा (King Bali)", description: "दानवीर असुरराज जिन्हें भगवान विष्णु ने अमरत्व और पाताल लोक का अधिपत्य दिया।" },
-         
           { name: "महर्षि व्यास (Maharshi Vyasa)", description: "महाभारत के रचयिता और वेदों के संकलक, जो सदा धर्म की रक्षा करते हैं।" },
           { name: "हनुमान (Hanuman)", description: "भगवान श्रीराम के परम भक्त, जो भक्तों की रक्षा के लिए सदा उपस्थित रहते हैं।" },
           { name: "विभीषण (Vibhishan)", description: "लंका के धर्मात्मा राजा, जिन्होंने धर्म के पक्ष में रहकर श्रीराम की सेवा की।" },
@@ -21,7 +19,6 @@ export default function ChiranjiviTemple() {
       : [
           { name: "Ashwatthama", description: "A warrior from Mahabharata blessed with immortality by Lord Krishna." },
           { name: "King Bali", description: "Generous Asura king blessed with immortality and rule over Patal Lok by Lord Vishnu." },
-
           { name: "Maharshi Vyasa", description: "Composer of the Mahabharata and compiler of the Vedas, protector of Dharma." },
           { name: "Hanuman", description: "Devotee of Lord Rama, eternally present to protect the devotees." },
           { name: "Vibhishan", description: "Righteous king of Lanka who served Lord Rama by upholding Dharma." },
@@ -31,14 +28,14 @@ export default function ChiranjiviTemple() {
         ];
 
   return (
-    <section id="chiranjivi" className="py-20 md:py-32 bg-secondary/20">
+    <section id="chiranjivi" className="py-20 md:py-32 bg-white border-t border-border/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             {lang === "hi" ? "🛕 अष्ट चिरंजीवी मंदिर" : "🛕 Ashta Chiranjivi Temple"}
           </h2>
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed">
             {lang === "hi" ? (
               <>
                 विश्वनाथ मठ परिसर में स्थित यह मंदिर आठ अमर आत्माओं —{" "}
@@ -60,18 +57,18 @@ export default function ChiranjiviTemple() {
           {chiranjivis.map((person, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl hover:border-primary/30 border border-transparent transition"
+              className="bg-secondary/10 rounded-xl p-6 shadow-sm hover:shadow-lg hover:border-primary/30 border border-transparent transition-all duration-300"
             >
               <div className="text-4xl mb-3 text-center">🪔</div>
               <h3 className="text-xl font-bold text-primary mb-2 text-center">{person.name}</h3>
-              <p className="text-foreground/70 text-center">{person.description}</p>
+              <p className="text-foreground/70 text-center leading-relaxed">{person.description}</p>
             </div>
           ))}
         </div>
 
         {/* Footer Message */}
-        <div className="mt-16 text-center p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20">
-          <p className="text-lg text-foreground">
+        <div className="mt-16 text-center p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20 shadow-sm">
+          <p className="text-lg text-foreground/80 leading-relaxed">
             {lang === "hi" ? (
               <>
                 यह मंदिर <em>अमरत्व, भक्ति और धर्म</em> के शाश्वत संदेश को समर्पित है। श्रद्धालु यहाँ

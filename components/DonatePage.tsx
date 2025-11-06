@@ -1,6 +1,15 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 export default function DonatePage() {
+  const router = useRouter();
+
+  // ✅ Function to go back to home
+  const handleReturn = () => {
+    router.push("/"); // navigates back to homepage
+  };
+
   return (
     <section className="py-20 md:py-32 bg-gradient-to-br from-primary/10 to-accent/10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -14,7 +23,7 @@ export default function DonatePage() {
           community service, and the preservation of sacred traditions.
         </p>
 
-        {/* Bank Details Card */}
+        {/* 🏦 Bank Details */}
         <div className="bg-white shadow-lg rounded-2xl p-8 mb-12 border border-primary/20 text-left">
           <h2 className="text-2xl font-bold text-primary mb-4">🏦 Bank Details</h2>
           <ul className="space-y-3 text-lg text-foreground/80">
@@ -33,8 +42,8 @@ export default function DonatePage() {
           </ul>
         </div>
 
-        {/* UPI Section */}
-        <div className="bg-white shadow-lg rounded-2xl p-8 border border-primary/20">
+        {/* 📱 UPI Section */}
+        <div className="bg-white shadow-lg rounded-2xl p-8 border border-primary/20 mb-8">
           <h2 className="text-2xl font-bold text-primary mb-4">📱 UPI Payment</h2>
           <p className="text-lg text-foreground/70 mb-4">
             You can also donate directly via UPI using the QR code or UPI ID below.
@@ -56,6 +65,14 @@ export default function DonatePage() {
         <p className="text-sm text-muted-foreground mt-10">
           Every contribution counts 🙏 — Thank you for supporting our mission.
         </p>
+
+        {/* ⬅️ Return to Home Button */}
+        <button
+          onClick={handleReturn}
+          className="mt-8 bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition"
+        >
+          ⬅️ Return to Home
+        </button>
       </div>
     </section>
   );

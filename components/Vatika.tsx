@@ -65,7 +65,7 @@ export default function Vatika() {
             description:
               "This garden is dedicated to the nine planets — Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, and Ketu. Each plant represents a planetary energy that radiates positive influence.",
             plants: [
-              "Sun – Bael ",
+              "Sun – Bael",
               "Moon – Sandalwood",
               "Mars – Periwinkle",
               "Mercury – Holy Basil",
@@ -82,7 +82,7 @@ export default function Vatika() {
               "This sacred garden is aligned with 27 constellations, each associated with a specific plant. It symbolizes the divine balance between human life and nature.",
             plants: [
               "Ashwini – Nux Vomica",
-              "Bharani – Amla ",
+              "Bharani – Amla",
               "Krittika – Banyan Tree",
               "Rohini – Jamun",
               "Mrigashira – Vetiver",
@@ -113,53 +113,41 @@ export default function Vatika() {
         ];
 
   return (
-    <section id="vatika" className="py-20 md:py-32 bg-white">
+    <section id="vatika" className="py-20 md:py-32 bg-secondary/30 border-t border-border/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             {lang === "hi" ? "🌿 पवित्र वाटिकाएँ" : "🌿 Sacred Gardens"}
           </h2>
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed">
             {lang === "hi" ? (
               <>
                 विश्वनाथ मठ परिसर में स्थित{" "}
-                <span className="font-semibold text-primary">
-                  नवग्रह वाटिका
-                </span>{" "}
-                और{" "}
-                <span className="font-semibold text-primary">
-                  नक्षत्र वाटिका
-                </span>{" "}
-                आध्यात्मिक ऊर्जा और प्राकृतिक संतुलन का सुंदर संगम हैं।
+                <span className="font-semibold text-primary">नवग्रह वाटिका</span> और{" "}
+                <span className="font-semibold text-primary">नक्षत्र वाटिका</span> आध्यात्मिक ऊर्जा
+                और प्राकृतिक संतुलन का सुंदर संगम हैं।
               </>
             ) : (
               <>
                 Within the Vishwanath Math premises, the{" "}
-                <span className="font-semibold text-primary">
-                  Navagrah Vatika
-                </span>{" "}
-                and{" "}
-                <span className="font-semibold text-primary">
-                  Nakshatra Vatika
-                </span>{" "}
-                stand as divine harmonies of spiritual energy and natural balance.
+                <span className="font-semibold text-primary">Navagrah Vatika</span> and{" "}
+                <span className="font-semibold text-primary">Nakshatra Vatika</span> stand as divine
+                harmonies of spiritual energy and natural balance.
               </>
             )}
           </p>
         </div>
 
         {/* Vatika Grid */}
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-10">
           {vatikaList.map((vatika, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-primary/5 to-accent/10 rounded-xl p-8 shadow-md hover:shadow-xl transition-all"
+              className="bg-white rounded-xl p-8 shadow-sm border border-primary/10 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
             >
-              <h3 className="text-2xl font-bold text-primary mb-4">
-                {vatika.title}
-              </h3>
-              <p className="text-foreground/70 mb-4">{vatika.description}</p>
+              <h3 className="text-2xl font-bold text-primary mb-4">{vatika.title}</h3>
+              <p className="text-foreground/80 mb-4 leading-relaxed">{vatika.description}</p>
               <ul className="list-disc list-inside text-foreground/80 space-y-1">
                 {vatika.plants.map((plant, idx) => (
                   <li key={idx}>{plant}</li>

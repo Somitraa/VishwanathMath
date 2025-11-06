@@ -10,7 +10,7 @@ export default function MainTemple() {
   };
 
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-b from-secondary/10 to-white">
+    <section className="py-20 md:py-32 bg-white border-t border-border/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title Section */}
         <div className="text-center mb-16">
@@ -45,7 +45,7 @@ export default function MainTemple() {
         </div>
 
         {/* Image Section */}
-        <div className="rounded-2xl overflow-hidden shadow-2xl mb-16">
+        <div className="rounded-2xl overflow-hidden shadow-2xl mb-16 border border-border/10">
           <img
             src="/mainnnn.jpg"
             alt={
@@ -53,7 +53,7 @@ export default function MainTemple() {
                 ? "मुख्य मंदिर - विश्वनाथ मठ"
                 : "Main Temple - Vishwanath Math"
             }
-            className="w-full h-[500px] object-cover"
+            className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700"
           />
         </div>
 
@@ -64,18 +64,16 @@ export default function MainTemple() {
               <p>
                 मुख्य मंदिर का निर्माण शिवभक्तों की गहन श्रद्धा और तप की भावना से हुआ है।
                 मंदिर परिसर में{" "}
-                <span className="font-semibold text-primary">1100 शिवलिंग</span> स्थापित हैं — प्रत्येक
-                शिवलिंग दिव्यता और सृजन शक्ति का प्रतीक है, जो भक्तों को शिव के अद्वैत स्वरूप की
-                याद दिलाते हैं।
+                <span className="font-semibold text-primary">1100 शिवलिंग</span> स्थापित हैं —
+                प्रत्येक शिवलिंग दिव्यता और सृजन शक्ति का प्रतीक है, जो भक्तों को शिव के अद्वैत
+                स्वरूप की याद दिलाते हैं।
               </p>
-
               <p>
                 मंदिर के केंद्र में स्थित{" "}
                 <span className="font-semibold text-primary">11 फीट ऊँचा विशाल शिवलिंग</span> इस
                 पवित्र स्थल का मुख्य आकर्षण है। यह शिवलिंग न केवल भक्ति और श्रद्धा का प्रतीक है,
                 बल्कि ध्यान और साधना के माध्यम से आत्मा को परमात्मा से जोड़ने का माध्यम भी है।
               </p>
-
               <p>
                 यहाँ प्रतिदिन विशेष पूजन, रुद्राभिषेक और ध्यान सत्र आयोजित किए जाते हैं, जहाँ
                 भक्तगण आध्यात्मिक शांति और ऊर्जा का अनुभव करते हैं। मंदिर का वातावरण शांति, भक्ति
@@ -90,7 +88,6 @@ export default function MainTemple() {
                 <span className="font-semibold text-primary">1100 Shivlings</span> — each representing
                 divinity and creative energy, reminding devotees of Shiva’s eternal oneness.
               </p>
-
               <p>
                 At the center lies a{" "}
                 <span className="font-semibold text-primary">
@@ -99,7 +96,6 @@ export default function MainTemple() {
                 , the primary attraction of this sacred site. It symbolizes devotion and faith and
                 serves as a medium to unite the soul with the Supreme through meditation and worship.
               </p>
-
               <p>
                 Daily special worships, Rudrabhishek, and meditation sessions are held here,
                 allowing devotees to experience profound peace and spiritual energy. The temple’s

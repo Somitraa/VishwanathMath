@@ -5,7 +5,6 @@ import { useLang } from "@/context/LanguageProvider";
 export default function RudraPeeth() {
   const { lang } = useLang();
 
-  // 🌍 Rudra forms in both Hindi & English
   const rudras =
     lang === "hi"
       ? [
@@ -38,7 +37,7 @@ export default function RudraPeeth() {
   return (
     <section
       id="rudra"
-      className="py-20 md:py-32 bg-background border-t border-border"
+      className="py-20 md:py-32 bg-secondary/30 border-t border-border/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -46,7 +45,7 @@ export default function RudraPeeth() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             {lang === "hi" ? "🕉️ एकादश रुद्र पीठ" : "🕉️ Ekadash Rudra Peeth"}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
             {lang === "hi" ? (
               <>
                 विश्वनाथ मठ परिसर में स्थित{" "}
@@ -74,7 +73,7 @@ export default function RudraPeeth() {
           {rudras.map((rudra, index) => (
             <div
               key={index}
-              className="p-6 rounded-xl border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all duration-300 text-center"
+              className="p-6 rounded-xl border border-primary/10 bg-white hover:border-primary/40 hover:shadow-md transition-all duration-300 text-center"
             >
               <div className="text-4xl mb-3">🔱</div>
               <h3 className="text-xl font-semibold text-primary mb-2">
@@ -86,8 +85,8 @@ export default function RudraPeeth() {
         </div>
 
         {/* Footer Message */}
-        <div className="mt-16 p-8 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 text-center">
-          <p className="text-lg text-foreground">
+        <div className="mt-16 p-8 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-center shadow-sm">
+          <p className="text-lg text-foreground/80 leading-relaxed">
             {lang === "hi" ? (
               <>
                 यह पीठ <strong>भगवान रुद्र</strong> के ग्यारह रूपों के माध्यम से आध्यात्मिक शक्ति,

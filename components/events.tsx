@@ -49,14 +49,16 @@ export default function Events() {
         ];
 
   return (
-    <section id="events" className="py-20 md:py-32 bg-white">
+    <section id="events" className="py-20 md:py-32 bg-secondary/30 border-t border-border/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 text-balance">
             {t.events_heading}
           </h2>
-          <p className="text-lg text-foreground/70">{t.events_content}</p>
+          <p className="text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed">
+            {t.events_content}
+          </p>
         </div>
 
         {/* Events List */}
@@ -64,16 +66,12 @@ export default function Events() {
           {events.map((event, idx) => (
             <div
               key={idx}
-              className="bg-gradient-to-r from-primary/5 to-accent/5 border-l-4 border-primary rounded-xl p-8 hover:shadow-lg transition"
+              className="bg-white border-l-4 border-primary rounded-xl p-8 shadow-sm hover:shadow-lg transition"
             >
               <div className="flex justify-between items-start md:items-center flex-col md:flex-row gap-4">
                 <div>
-                  <h3 className="text-2xl font-bold text-primary mb-2">
-                    {event.title}
-                  </h3>
-                  <p className="text-foreground/70 mb-2 leading-relaxed">
-                    {event.description}
-                  </p>
+                  <h3 className="text-2xl font-bold text-primary mb-2">{event.title}</h3>
+                  <p className="text-foreground/70 mb-2 leading-relaxed">{event.description}</p>
                   <p className="text-primary font-semibold">{event.date}</p>
                 </div>
 

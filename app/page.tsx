@@ -35,7 +35,6 @@ export default function Home() {
           <RudraPeeth />
           <Gaushala />
           <Vatika />
-
           <About />
           <Services />
           <Guruji />

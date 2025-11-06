@@ -5,14 +5,17 @@ export default function BelVan() {
   const { lang } = useLang();
 
   return (
-    <section id="belvan" className="py-20 md:py-32 bg-background border-t border-border">
+    <section
+      id="belvan"
+      className="py-20 md:py-32 bg-secondary/30 border-t border-border/10"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             {lang === "hi" ? "विश्वनाथ बिल्व वन" : "Vishwanath Bilva Forest"}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
             {lang === "hi" ? (
               <>
                 <strong>बिल्व वन</strong> विश्वनाथ मठ का एक पवित्र उपवन है, जहाँ भगवान शिव को प्रिय
@@ -82,8 +85,8 @@ export default function BelVan() {
         </div>
 
         {/* Footer */}
-        <div className="mt-16 p-8 rounded-xl bg-gradient-to-r from-green-50 to-primary/10 border border-primary/20 text-center">
-          <p className="text-lg text-foreground">
+        <div className="mt-16 p-8 rounded-xl bg-gradient-to-r from-green-50 to-primary/10 border border-primary/20 text-center shadow-sm">
+          <p className="text-lg text-foreground/80 leading-relaxed">
             {lang === "hi" ? (
               <>
                 <strong>बिल्व वन</strong> प्रकृति और अध्यात्म के संगम का स्थल है — जहाँ हर पत्ता

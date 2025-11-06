@@ -33,7 +33,7 @@ export default function Contact() {
       payload.append("message", formData.message);
 
       const res = await fetch(
-        "https://script.google.com/macros/s/AKfycbwlxGeOBpInF2fJ5DBBq9rPz11eoJUPE3M7GrLwy-SxfubjaSKDv-Z0TeJ2nIQ1Hi53/exec", // <-- your deployed Google Apps Script /exec URL
+        "https://script.google.com/macros/s/AKfycbwlxGeOBpInF2fJ5DBBq9rPz11eoJUPE3M7GrLwy-SxfubjaSKDv-Z0TeJ2nIQ1Hi53/exec",
         {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -70,7 +70,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-secondary/30">
+    <section id="contact" className="py-20 md:py-32 bg-white border-t border-border/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left Info Section */}
@@ -78,13 +78,14 @@ export default function Contact() {
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
               {lang === "hi" ? "संपर्क करें" : "Contact Us"}
             </h2>
-            <p className="text-lg text-foreground/70 mb-8 leading-relaxed">
+            <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
               {lang === "hi"
                 ? "कोई प्रश्न है या हमसे मिलना चाहते हैं? हमें आपसे सुनकर खुशी होगी। नीचे दिए गए किसी भी माध्यम से हमसे संपर्क करें।"
                 : "Have a question or wish to meet us? We’d love to hear from you. Reach out through any of the ways below."}
             </p>
 
             <div className="space-y-6">
+              {/* Location */}
               <div className="flex gap-4">
                 <div className="text-3xl">📍</div>
                 <div>
@@ -97,6 +98,7 @@ export default function Contact() {
                 </div>
               </div>
 
+              {/* Phone */}
               <div className="flex gap-4">
                 <div className="text-3xl">📞</div>
                 <div>
@@ -107,6 +109,7 @@ export default function Contact() {
                 </div>
               </div>
 
+              {/* Email */}
               <div className="flex gap-4">
                 <div className="text-3xl">✉️</div>
                 <div>
@@ -127,7 +130,10 @@ export default function Contact() {
           </div>
 
           {/* Right Form Section */}
-          <form onSubmit={handleSubmit} className="bg-white rounded-xl p-8 shadow-lg">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-secondary/10 rounded-xl p-8 shadow-md border border-border/10 hover:shadow-lg transition"
+          >
             <div className="mb-6">
               <label className="block text-foreground font-semibold mb-2">
                 {lang === "hi" ? "नाम" : "Name"}
