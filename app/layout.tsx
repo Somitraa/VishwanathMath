@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { LanguageProvider } from "@/context/LanguageProvider"; // ✅ import your provider
 
 export const metadata: Metadata = {
   title: "Vishwanath Math",
   description: "Official website of Vishwanath Math",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
+
+
 
 export default function RootLayout({
   children,
@@ -12,9 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="hi">
       <head>
-        {/* Google Fonts for Gotu (heading) & Vesper Libre (paragraph) */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
@@ -22,7 +27,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased">{children}</body>
+      {/* ✅ Wrap everything in LanguageProvider */}
+      <body className="antialiased">
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }
