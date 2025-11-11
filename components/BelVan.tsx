@@ -7,7 +7,7 @@ export default function BelVan() {
   return (
     <section
       id="belvan"
-      className="py-20 md:py-32 bg-secondary/30 border-t border-border/10"
+      className="py-20 md:py-32 bg-white border-t border-border/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -15,7 +15,7 @@ export default function BelVan() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             {lang === "hi" ? "विश्वनाथ बिल्व वन" : "Vishwanath Bilva Forest"}
           </h2>
-          <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-foreground/70 max-w-3xl mx-auto leading-relaxed">
             {lang === "hi" ? (
               <>
                 <strong>बिल्व वन</strong> विश्वनाथ मठ का एक पवित्र उपवन है, जहाँ भगवान शिव को प्रिय
@@ -34,12 +34,13 @@ export default function BelVan() {
 
         {/* Content */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="space-y-6">
+          {/* Text Section */}
+          <div className="space-y-6 text-foreground/80 leading-relaxed text-lg">
             <h3 className="text-2xl font-semibold text-primary">
               {lang === "hi" ? "🔱 बिल्व वृक्ष का महत्व" : "🔱 Significance of the Bilva Tree"}
             </h3>
 
-            <p className="text-foreground/80 leading-relaxed">
+            <p>
               {lang === "hi" ? (
                 <>
                   हिंदू शास्त्रों में बिल्व वृक्ष को त्रिदेव का प्रतीक माना गया है — इसकी तीन पत्तियाँ
@@ -60,7 +61,7 @@ export default function BelVan() {
               {lang === "hi" ? (
                 <>
                   <li>शिव पूजा में बिल्व पत्र का विशेष महत्व है।</li>
-                  <li>इस वृक्ष से वातावरण शुद्ध होता है।</li>
+                  <li>यह वृक्ष वातावरण को शुद्ध करता है।</li>
                   <li>औषधीय गुणों से भरपूर और आयुर्वेद में उपयोगी।</li>
                   <li>ध्यान और साधना के लिए शांतिपूर्ण वातावरण प्रदान करता है।</li>
                 </>
@@ -75,17 +76,18 @@ export default function BelVan() {
             </ul>
           </div>
 
-          <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg">
+          {/* Image */}
+          <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg border border-primary/20">
             <img
               src="/bel.jpg"
               alt={lang === "hi" ? "बिल्व वन" : "Bilva Forest"}
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-in-out"
             />
           </div>
         </div>
 
         {/* Footer */}
-        <div className="mt-16 p-8 rounded-xl bg-gradient-to-r from-green-50 to-primary/10 border border-primary/20 text-center shadow-sm">
+        <div className="mt-16 p-8 rounded-xl bg-gradient-to-r from-primary/5 to-secondary/10 border border-primary/20 text-center shadow-sm">
           <p className="text-lg text-foreground/80 leading-relaxed">
             {lang === "hi" ? (
               <>

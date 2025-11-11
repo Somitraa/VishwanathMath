@@ -28,7 +28,10 @@ export default function ChiranjiviTemple() {
         ];
 
   return (
-    <section id="chiranjivi" className="py-20 md:py-32 bg-white border-t border-border/10">
+    <section
+      id="chiranjivi"
+      className="py-20 md:py-32 bg-gradient-to-br from-secondary/20 to-primary/10 border-t border-border/10"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -57,7 +60,7 @@ export default function ChiranjiviTemple() {
           {chiranjivis.map((person, idx) => (
             <div
               key={idx}
-              className="bg-secondary/10 rounded-xl p-6 shadow-sm hover:shadow-lg hover:border-primary/30 border border-transparent transition-all duration-300"
+              className="bg-white/70 rounded-xl p-6 shadow-sm hover:shadow-lg hover:border-primary/30 border border-transparent transition-all duration-300 backdrop-blur-sm"
             >
               <div className="text-4xl mb-3 text-center">🪔</div>
               <h3 className="text-xl font-bold text-primary mb-2 text-center">{person.name}</h3>
@@ -67,7 +70,7 @@ export default function ChiranjiviTemple() {
         </div>
 
         {/* Footer Message */}
-        <div className="mt-16 text-center p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20 shadow-sm">
+        <div className="mt-16 text-center p-6 bg-gradient-to-r from-primary/5 to-secondary/10 rounded-xl border border-primary/20 shadow-sm">
           <p className="text-lg text-foreground/80 leading-relaxed">
             {lang === "hi" ? (
               <>
@@ -76,7 +79,8 @@ export default function ChiranjiviTemple() {
               </>
             ) : (
               <>
-                This temple is dedicated to the eternal message of <em>immortality, devotion, and Dharma</em>.  
+                This temple is dedicated to the eternal message of{" "}
+                <em>immortality, devotion, and Dharma</em>.  
                 Devotees experience positive spiritual energy by visiting here.
               </>
             )}

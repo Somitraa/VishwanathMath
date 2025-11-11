@@ -8,7 +8,7 @@ export default function Gaushala() {
   return (
     <section
       id="gaushala"
-      className="py-20 md:py-32 bg-white border-t border-border/10"
+      className="py-20 md:py-32 bg-gradient-to-br from-secondary/20 to-primary/10 border-t border-border/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
@@ -43,11 +43,11 @@ export default function Gaushala() {
         {/* Main Content */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Image */}
-          <div className="rounded-2xl overflow-hidden shadow-md border border-primary/20">
+          <div className="rounded-2xl overflow-hidden shadow-lg border border-primary/20">
             <img
-              src="/c17.jpg"
+              src="/c1.jpg"
               alt={lang === "hi" ? "विश्वनाथ मठ गौशाला" : "Vishwanath Math Gaushala"}
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-in-out"
             />
           </div>
 
@@ -122,7 +122,7 @@ export default function Gaushala() {
         </div>
 
         {/* Closing Highlight */}
-        <div className="mt-16 text-center p-8 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 shadow-sm">
+        <div className="mt-16 text-center p-8 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 shadow-sm">
           <p className="text-lg text-foreground/80 leading-relaxed">
             {lang === "hi"
               ? "विश्वनाथ मठ की गौशाला केवल पशु सेवा नहीं, बल्कि ईश्वर सेवा का जीवंत उदाहरण है।"

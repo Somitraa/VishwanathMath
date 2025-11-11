@@ -113,12 +113,15 @@ export default function Vatika() {
         ];
 
   return (
-    <section id="vatika" className="py-20 md:py-32 bg-secondary/30 border-t border-border/10">
+    <section
+      id="vatika"
+      className="py-20 md:py-32 bg-white border-t border-border/10"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            {lang === "hi" ? "🌿 पवित्र वाटिकाएँ" : "🌿 Sacred Gardens"}
+            {lang === "hi" ? " पवित्र वाटिकाएँ" : " Sacred Gardens"}
           </h2>
           <p className="text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed">
             {lang === "hi" ? (
@@ -144,7 +147,7 @@ export default function Vatika() {
           {vatikaList.map((vatika, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-8 shadow-sm border border-primary/10 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+              className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-xl p-8 shadow-md border border-primary/10 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
             >
               <h3 className="text-2xl font-bold text-primary mb-4">{vatika.title}</h3>
               <p className="text-foreground/80 mb-4 leading-relaxed">{vatika.description}</p>

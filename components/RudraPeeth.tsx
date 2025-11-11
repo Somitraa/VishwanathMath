@@ -37,15 +37,15 @@ export default function RudraPeeth() {
   return (
     <section
       id="rudra"
-      className="py-20 md:py-32 bg-secondary/30 border-t border-border/10"
+      className="py-20 md:py-32 bg-white border-t border-border/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            {lang === "hi" ? "🕉️ एकादश रुद्र पीठ" : "🕉️ Ekadash Rudra Peeth"}
+            {lang === "hi" ? "🕉 एकादश रुद्र पीठ" : "🕉 Ekadash Rudra Peeth"}
           </h2>
-          <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-foreground/70 max-w-3xl mx-auto leading-relaxed">
             {lang === "hi" ? (
               <>
                 विश्वनाथ मठ परिसर में स्थित{" "}
@@ -85,7 +85,7 @@ export default function RudraPeeth() {
         </div>
 
         {/* Footer Message */}
-        <div className="mt-16 p-8 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-center shadow-sm">
+        <div className="mt-16 p-8 rounded-xl bg-gradient-to-r from-primary/5 to-secondary/10 border border-primary/20 text-center shadow-sm">
           <p className="text-lg text-foreground/80 leading-relaxed">
             {lang === "hi" ? (
               <>

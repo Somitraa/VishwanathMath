@@ -26,7 +26,10 @@ export default function Services() {
         ];
 
   return (
-    <section id="services" className="py-20 md:py-32 bg-secondary/30 border-t border-border/10">
+    <section
+      id="services"
+      className="py-20 md:py-32 bg-white border-t border-border/10"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -45,10 +48,12 @@ export default function Services() {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl p-8 shadow-sm border border-primary/10 hover:border-primary/30 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-gradient-to-br from-primary/5 to-secondary/10 rounded-xl p-8 shadow-sm border border-primary/10 hover:border-primary/30 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="text-4xl mb-3">{service.icon}</div>
-              <h3 className="text-xl font-bold text-primary mb-2">{service.name}</h3>
+              <h3 className="text-xl font-bold text-primary mb-2">
+                {service.name}
+              </h3>
               <p className="text-foreground/70">{service.time}</p>
             </div>
           ))}
