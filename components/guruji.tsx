@@ -9,6 +9,7 @@ export default function Guruji() {
   return (
     <section id="guruji" className="py-20 md:py-32 bg-white border-t border-border/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Heading Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
@@ -16,17 +17,25 @@ export default function Guruji() {
               ? "शिवऋषि आचार्य मनीष द्विवेदी जी"
               : "ShivRishi Acharya Manish Dwivedi Ji"}
           </h2>
+
+          {/* ⭐ Newspaper Paragraph */}
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed mb-6">
+            {lang === "hi"
+              ? "आचार्य मनीष द्विवेदी जी वाराणसी के संपूर्णानंद संस्कृत विश्वविद्यालय से यंत्र-दर्शन, दर्शनशास्त्र और तंत्र में स्नातकोत्तर हैं। उन्हें काशी विद्युत परिषद् ने ‘शिवऋषि’ की उपाधि प्रदान की है। वे अब तक देश के नौ राज्यों में 1100 से अधिक प्राचीन शिवलिंगों का दर्शन, पूजन और अभिषेक कर चुके हैं।"
+              : "Acharya Manish Dwivedi Ji holds a postgraduate degree in Yantra-Darshan, Philosophy, and Tantra from Sampurnanand Sanskrit University, Varanasi. He has been honoured with the title ‘ShivRishi’ by Kashi Vidyut Parishad. He has visited, worshipped, and performed Abhishekam on more than 1100 ancient Shivlings across nine states of India."}
+          </p>
+
+          {/* Intro Paragraph */}
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
             {lang === "hi" ? (
               <>
                 तंत्र और वेद परंपरा के प्रख्यात साधक —{" "}
                 <span className="font-semibold text-primary">
                   शिवऋषि आचार्य मनीष द्विवेदी जी
-                </span>
-                , आध्यात्मिक साधना और शास्त्र ज्ञान के माध्यम से समाज में चेतना,
+                </span>{" "}
+                आध्यात्मिक साधना और शास्त्र ज्ञान के माध्यम से समाज में चेतना,
                 समरसता और धर्म के प्रति श्रद्धा जागृत करने का कार्य कर रहे हैं।
-                उनका उद्देश्य मानव जीवन को आत्मज्ञान और दिव्यता की अनुभूति की
-                दिशा में ले जाना है।
+                उनका उद्देश्य मानव जीवन को आत्मज्ञान और दिव्यता की अनुभूति की दिशा में ले जाना है।
               </>
             ) : (
               <>
@@ -35,9 +44,8 @@ export default function Guruji() {
                   ShivRishi Acharya Manish Dwivedi Ji
                 </span>{" "}
                 is dedicated to awakening consciousness, harmony, and devotion to
-                Dharma through spiritual practice and sacred knowledge. His
-                mission is to guide humanity toward self-realization and divine
-                awareness.
+                Dharma through spiritual practice and sacred knowledge. His mission
+                is to guide humanity toward self-realization and divine awareness.
               </>
             )}
           </p>
@@ -45,6 +53,7 @@ export default function Guruji() {
 
         {/* Main Content */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
+
           {/* Guruji Photo */}
           <div className="flex justify-center">
             <div className="rounded-2xl shadow-md hover:shadow-xl border-2 border-transparent hover:border-primary/20 transition p-4">
@@ -71,7 +80,7 @@ export default function Guruji() {
                 : "From Dashashwamedh Ghat, Varanasi, he shares the essence of Tantric practices through teachings and rituals. He explains that Tantra is not merely worship of power, but a science of balance and awakening in every aspect of life.",
               lang === "hi"
                 ? "आचार्य जी का उद्देश्य केवल आध्यात्मिक शिक्षा देना नहीं, बल्कि प्रत्येक व्यक्ति के भीतर निहित दिव्यता को जागृत करना है। वे आधुनिक समाज को यह सिखाते हैं कि विज्ञान और अध्यात्म विरोधी नहीं।"
-                : "His goal is not just to impart spiritual knowledge, but to awaken the divinity that lies within every individual. He teaches modern society that science and spirituality are not opposites, but complementary paths to truth.",
+                : "His goal is not just to impart spiritual knowledge, but to awaken the divinity within every individual. He teaches that science and spirituality are not opposites, but complementary paths to truth.",
             ].map((text, idx) => (
               <div
                 key={idx}

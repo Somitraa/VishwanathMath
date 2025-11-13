@@ -19,88 +19,82 @@ export default function MainTemple() {
               ? "मुख्य मंदिर – विश्वनाथ मठ"
               : "Main Temple – Vishwanath Math"}
           </h1>
+
           <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
             {lang === "hi" ? (
               <>
-                भगवान शिव की दिव्य उपासना के केंद्र में स्थित यह मंदिर, विश्वनाथ मठ का
-                हृदयस्थल है। यहाँ स्थापित{" "}
-                <span className="font-semibold text-primary">1100 शिवलिंग</span> और एक{" "}
+                विश्वनाथ मठ का मुख्य मंदिर शिवभक्ति, साधना और दिव्यता का केंद्र है। यहाँ{" "}
+                <span className="font-semibold text-primary">1100 शिवलिंग</span> और{" "}
                 <span className="font-semibold text-primary">
                   11 फीट ऊँचा विशाल शिवलिंग
                 </span>{" "}
-                भक्ति, शक्ति और शिवत्व के अनंत स्वरूप का प्रतीक हैं।
+                स्थापित हैं, जो शिवत्व की अनंत ऊर्जा का प्रतीक हैं।
               </>
             ) : (
               <>
-                Situated at the heart of divine worship, this temple is the spiritual center of
-                Vishwanath Math. The{" "}
+                The Main Temple of Vishwanath Math stands as a powerful center of
+                Shiva devotion, meditation, and divine energy. The{" "}
                 <span className="font-semibold text-primary">1100 Shivlings</span> and the{" "}
                 <span className="font-semibold text-primary">
-                  11-foot-tall grand Shivling
+                  11-foot grand Shivling
                 </span>{" "}
-                symbolize infinite devotion, power, and the eternal essence of Shiva.
+                symbolize the infinite presence of Lord Shiva.
               </>
             )}
           </p>
         </div>
 
-        {/* Image Section */}
+        {/* Image */}
         <div className="rounded-2xl overflow-hidden shadow-2xl mb-16 border border-border/10">
           <img
             src="/mainnnn.jpg"
-            alt={
-              lang === "hi"
-                ? "मुख्य मंदिर - विश्वनाथ मठ"
-                : "Main Temple - Vishwanath Math"
-            }
+            alt={lang === "hi" ? "मुख्य मंदिर" : "Main Temple"}
             className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700"
           />
         </div>
 
-        {/* Description Section */}
+        {/* Description */}
         <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
           {lang === "hi" ? (
             <>
               <p>
-                मुख्य मंदिर का निर्माण शिवभक्तों की गहन श्रद्धा और तप की भावना से हुआ है।
-                मंदिर परिसर में{" "}
-                <span className="font-semibold text-primary">1100 शिवलिंग</span> स्थापित हैं —
-                प्रत्येक शिवलिंग दिव्यता और सृजन शक्ति का प्रतीक है, जो भक्तों को शिव के अद्वैत
-                स्वरूप की याद दिलाते हैं।
+                यहाँ पूजन की विधि <strong>नर्मदेश्वर परंपरा</strong> पर आधारित है।
+                विशेष रूप से <strong>गौखुर विधि</strong> और तांत्रिक परंपरा का संगम
+                इस शिवधाम को अद्वितीय बनाता है।
               </p>
+
               <p>
-                मंदिर के केंद्र में स्थित{" "}
-                <span className="font-semibold text-primary">11 फीट ऊँचा विशाल शिवलिंग</span> इस
-                पवित्र स्थल का मुख्य आकर्षण है। यह शिवलिंग न केवल भक्ति और श्रद्धा का प्रतीक है,
-                बल्कि ध्यान और साधना के माध्यम से आत्मा को परमात्मा से जोड़ने का माध्यम भी है।
+                मंदिर की संरचना भी अत्यंत प्रतीकात्मक है—नीचे चौकोर आधार{" "}
+                <strong>ब्रह्मा</strong> स्वरूप, बीच का अष्टकोण{" "}
+                <strong>विष्णु</strong> का रूप, और ऊपर स्थित शिवलिंग{" "}
+                <strong>अर्धनारीश्वर</strong> का प्रतीक माने जाते हैं।
               </p>
+
               <p>
-                यहाँ प्रतिदिन विशेष पूजन, रुद्राभिषेक और ध्यान सत्र आयोजित किए जाते हैं, जहाँ
-                भक्तगण आध्यात्मिक शांति और ऊर्जा का अनुभव करते हैं। मंदिर का वातावरण शांति, भक्ति
-                और दिव्यता से परिपूर्ण है, जो प्रत्येक आगंतुक के मन को शिवमय बना देता है।
+                प्रतिदिन होने वाले रुद्राभिषेक, ध्यान और पूजन से साधकों को गहन
+                शांति, ऊर्जा और शिवतत्व का अनुभव प्राप्त होता है।
               </p>
             </>
           ) : (
             <>
               <p>
-                The Main Temple was built with deep devotion and penance by devotees of Lord Shiva.
-                Within the temple premises stand{" "}
-                <span className="font-semibold text-primary">1100 Shivlings</span> — each representing
-                divinity and creative energy, reminding devotees of Shiva’s eternal oneness.
+                The worship here follows the ancient{" "}
+                <strong>Narmadeshwar tradition</strong>, including the sacred{" "}
+                <strong>Gaukhur method</strong> combined with Tantric practices,
+                making this temple spiritually unique.
               </p>
+
               <p>
-                At the center lies a{" "}
-                <span className="font-semibold text-primary">
-                  magnificent 11-foot-tall Shivling
-                </span>
-                , the primary attraction of this sacred site. It symbolizes devotion and faith and
-                serves as a medium to unite the soul with the Supreme through meditation and worship.
+                The temple’s architecture is symbolic — the square base represents{" "}
+                <strong>Brahma</strong>, the octagonal middle tier signifies{" "}
+                <strong>Vishnu</strong>, and the top Shivling symbolizes{" "}
+                <strong>Ardhanarishwara</strong>, the union of Shiva and Shakti.
               </p>
+
               <p>
-                Daily special worships, Rudrabhishek, and meditation sessions are held here,
-                allowing devotees to experience profound peace and spiritual energy. The temple’s
-                atmosphere is filled with serenity, devotion, and divinity — transforming every
-                visitor’s heart into a space of Shiva consciousness.
+                Daily Rudrabhishek, meditation, and rituals allow devotees to
+                experience deep peace, spiritual awakening, and the divine essence of
+                Shiva.
               </p>
             </>
           )}

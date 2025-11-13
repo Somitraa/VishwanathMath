@@ -6,47 +6,50 @@ export default function Events() {
   const { t, lang } = useLang();
 
   // 🌍 Event data in both Hindi & English
+
   const events =
-    lang === "hi"
-      ? [
-          {
-            title: "दीवाली उत्सव",
-            date: "1 नवम्बर, 2025",
-            description: "विशेष पूजा और सामुदायिक एकत्रण के साथ रोशनी का पर्व।",
-          },
-          {
-            title: "होली उत्सव",
-            date: "14 मार्च, 2025",
-            description:
-              "रंगों और नए आरंभ का पर्व पारंपरिक अनुष्ठानों के साथ मनाया जाएगा।",
-          },
-          {
-            title: "नवरात्रि उत्सव",
-            date: "3–12 अक्टूबर, 2025",
-            description:
-              "भक्ति की नौ रातें — विशेष पूजा और सांस्कृतिक कार्यक्रमों के साथ।",
-          },
-        ]
-      : [
-          {
-            title: "Diwali Festival",
-            date: "November 1, 2025",
-            description:
-              "Festival of lights celebrated with prayers and community gatherings.",
-          },
-          {
-            title: "Holi Festival",
-            date: "March 14, 2025",
-            description:
-              "Festival of colors and new beginnings celebrated with traditional rituals.",
-          },
-          {
-            title: "Navratri Festival",
-            date: "October 3–12, 2025",
-            description:
-              "Nine nights of devotion — with prayers and cultural celebrations.",
-          },
-        ];
+  lang === "hi"
+    ? [
+        {
+          title: "गीता जयंती",
+          date: "1 दिसम्बर, 2025",
+          description:
+            "भगवान श्रीकृष्ण द्वारा अर्जुन को प्रदत्त भगवद्गीता के दिव्य उपदेशों का स्मरण दिवस।",
+        },
+        {
+          title: "वैकुण्ठ एकादशी",
+          date: "31 दिसम्बर, 2025",
+          description:
+            "भगवान विष्णु के वैकुण्ठ लोक से आगमन का प्रतीक पर्व — मोक्ष की प्राप्ति का दिन।",
+        },
+        {
+          title: "महाशिवरात्रि",
+          date: "15 फरवरी, 2026",
+          description:
+            "भगवान शिव और माँ पार्वती के दिव्य मिलन की रात्रि — उपवास, ध्यान और भक्ति का पर्व।",
+        },
+      ]
+    : [
+        {
+          title: "Gita Jayanti",
+          date: "December 1, 2025",
+          description:
+            "Day commemorating the divine teachings of Lord Krishna to Arjuna in the Bhagavad Gita.",
+        },
+        {
+          title: "Vaikuntha Ekadashi",
+          date: "December 31, 2025",
+          description:
+            "Symbolizes Lord Vishnu’s return from Vaikuntha — a sacred day for liberation and devotion.",
+        },
+        {
+          title: "Maha Shivaratri",
+          date: "February 15, 2026",
+          description:
+            "The great night of Lord Shiva and Goddess Parvati — a time for fasting, meditation, and devotion.",
+        },
+      ];
+
 
   return (
     <section id="events" className="py-20 md:py-32 bg-secondary/30 border-t border-border/10">
