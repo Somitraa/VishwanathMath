@@ -9,7 +9,6 @@ Built as a **freelancing project**, VishwanathMath serves as a serene digital sa
 
 ![VishwanathMath Banner](/vishwanathmath-banner.jpg)
 
-> *(Replace the above link with your image from the `public/` folder, e.g., `/banner.png`)*
 
 ---
 
