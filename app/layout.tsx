@@ -18,6 +18,10 @@ export const metadata: Metadata = {
     "Gaushala",
     "Rudra Peeth",
     "Chiranjivi Temple",
+    "VishwanathMath",
+    "VishwanathMath Madhya Pradesh",
+    "Negma Pipariya",
+    "Sidh Giri Parvat",
   ],
   openGraph: {
     title: "Vishwanath Math – शिवधाम विश्वनाथ मठ",
