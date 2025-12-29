@@ -10,7 +10,7 @@ Built as a **freelancing project**, VishwanathMath provides a serene digital spa
 to explore temple information, events, services, Guruji’s teachings, and more.
 
 <br/>
-
+ 
 <img src="public/vishwanathmath-banner.jpg" alt="VishwanathMath Banner" width="100%"/>
 
 </div>
