@@ -101,7 +101,9 @@ export default function SidhGiri() {
           {/* Image */}
           <div className="rounded-2xl overflow-hidden shadow-lg border border-primary/20">
             <img
-              src="/parwat.jpg"
+              // src="/parwat.jpg"
+              src="/hanumanjii.jpeg"
+
               alt={
                 lang === "hi"
                   ? "सिद्ध गिरि पर्वत का पवित्र दृश्य"
