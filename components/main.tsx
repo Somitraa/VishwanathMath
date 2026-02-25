@@ -26,7 +26,7 @@ export default function MainTemple() {
                 विश्वनाथ मठ का मुख्य मंदिर शिवभक्ति, साधना और दिव्यता का केंद्र है। यहाँ{" "}
                 <span className="font-semibold text-primary">1100 शिवलिंग</span> और{" "}
                 <span className="font-semibold text-primary">
-                  11 फीट ऊँचा विशाल शिवलिंग
+                  21 फीट ऊँचा विशाल शिवलिंग
                 </span>{" "}
                 स्थापित हैं, जो शिवत्व की अनंत ऊर्जा का प्रतीक हैं।
               </>
@@ -36,7 +36,7 @@ export default function MainTemple() {
                 Shiva devotion, meditation, and divine energy. The{" "}
                 <span className="font-semibold text-primary">1100 Shivlings</span> and the{" "}
                 <span className="font-semibold text-primary">
-                  11-foot grand Shivling
+                  21-foot grand Shivling
                 </span>{" "}
                 symbolize the infinite presence of Lord Shiva.
               </>
